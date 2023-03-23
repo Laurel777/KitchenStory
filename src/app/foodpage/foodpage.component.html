@@ -1,0 +1,16 @@
+<div class="container">
+    <img [src]="food.imageUrl" [alt]="food.dishname"/>
+</div>
+<div class="details">
+    <div class="header">
+        <span class="name">
+            {{food.dishname}}
+        </span>
+    </div>
+    <div class="price">
+        <span class="name">
+            {{food.dishprice}}
+        </span>
+    </div>
+<button (click)="addtoCart()">Add to cart</button>
+</div>

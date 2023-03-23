@@ -1,0 +1,24 @@
+<div class="text-center">
+    <h2>Welcome to Kitchen Story</h2>
+    <br/>
+    <h5>Following are the list of items we provide</h5>
+</div>
+<app-search></app-search>
+
+
+<ul>
+<li *ngFor="let food of foods">
+    <a routerLink="/food/{{food.id}}"> 
+    <img src="{{food.imageUrl}}" alt="food images">
+    <div class="content">
+        <div name ="name">
+            {{food.dishname}}
+
+        </div>
+
+    </div>
+</a>
+</li>
+
+
+</ul>
